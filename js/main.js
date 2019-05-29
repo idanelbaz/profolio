@@ -16,7 +16,7 @@ function renderProj() {
     var projects = getProjects();
 
     for (var i = 0; i < projects.length; i++) {
-        strHtml += ` <div class="col-md-4 col-sm-6 portfolio-item">
+        strHtml += ` <div class="d-block w-100 portfolio-item">
         <a class="portfolio-link" onclick ="renderModal(${projects[i].id}) " >
             <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
@@ -30,10 +30,18 @@ function renderProj() {
             <p class="text-muted">${projects[i].desc}</p>
         </div>
     </div>`;
+        if (i === 0) {
+            $('.one').html(strHtml);
+            strHtml = '';
+        } else if (i === 1) {
+            $('.two').html(strHtml);
+            strHtml = '';
+        } else if (i === 2) {
+            $('.three').html(strHtml);
+            strHtml = '';
+        }
     };
 
-
-    $('.innerPro').html(strHtml);
 
 }
 
