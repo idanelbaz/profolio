@@ -4,6 +4,10 @@ body {
     width: 100vw;
 }
 
+a:active {
+    color: white;
+}
+
 .btn-primary {
     font-size: 0.7em;
 }
@@ -112,10 +116,6 @@ img::selection {
 
 img::-moz-selection {
     background: transparent;
-}
-
-body {
-    -webkit-tap-highlight-color: #fed136;
 }
 
 .offcanvas-btn {
