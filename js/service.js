@@ -28,15 +28,20 @@ function createProj(id, name, title, desc, url, publishedAt, labels, img) {
     }
 }
 
-
-function createEmailLink(email, subject, msg) {
-
-    var strLink = '';
-    strLink += 'https://mail.google.com/mail/?view=cm&fs=1&to=' + 'idanelbaz@gmail.com' + '&su=' + subject + '&body=' + msg;
-
-    return strLink;
+function getProjects() {
+    return gprojects
 }
 
+function getProjById(id) {
+    return gprojects.find(function(proj) {
+        return proj.id === id
+    })
+}
+
+
+function createEmailLink(subject, msg) {
+    return 'https://mail.google.com/mail/?view=cm&fs=1&to=' + 'idanelbaz@gmail.com' + '&su=' + subject + '&body=' + msg;
+}
 
 
 function getTime() {

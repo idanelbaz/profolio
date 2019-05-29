@@ -13,7 +13,7 @@ function init() {
 
 function renderProj() {
     var strHtml = '';
-    var projects = gprojects;
+    var projects = getProjects();
 
     for (var i = 0; i < projects.length; i++) {
         strHtml += ` <div class="col-md-4 col-sm-6 portfolio-item">
@@ -38,11 +38,9 @@ function renderProj() {
 }
 
 function renderModal(projId) {
-    console.log(projId)
+
     var strHtml = '';
-    var projects = gprojects;
-    var proj = projects[projId - 1];
-    console.log(proj)
+    var proj = getProjById(projId);
 
     strHtml += `
     <div class="modal-dialog">
@@ -66,7 +64,7 @@ function renderModal(projId) {
             <li>${proj.publishedAt}</li>
             <li>${proj.labels}</li>
             <li>Category: Games</li>
-            <a class= "visit" href="${proj.url}">Visit ${proj.name} </a>
+            <a href="${proj.url}">Visit ${proj.name} </a>
         </ul>
         <button class="btn btn-primary" data-dismiss="modal" type="button">
     <i class="fa fa-times"></i>
@@ -86,11 +84,11 @@ function renderModal(projId) {
 }
 
 function sendMail() {
-    console.log('hi')
+
     var email = $('.email').val();
     var subject = $('.subject').val();
     var msg = $('.message').val();
 
-    var emailLink = createEmailLink(email, subject, msg);
+    var emailLink = createEmailLink(subject, msg);
     window.open(emailLink)
 }
