@@ -66,7 +66,7 @@ function renderModal(projId) {
             <li>${proj.publishedAt}</li>
             <li>${proj.labels}</li>
             <li>Category: Games</li>
-            <a href="${proj.url}">Visit ${proj.name} </a>
+            <a class= "visit" href="${proj.url}">Visit ${proj.name} </a>
         </ul>
         <button class="btn btn-primary" data-dismiss="modal" type="button">
     <i class="fa fa-times"></i>

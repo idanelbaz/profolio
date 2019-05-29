@@ -4,6 +4,10 @@ body {
     width: 100vw;
 }
 
+.btn-primary {
+    font-size: 0.7em;
+}
+
 .img-fluid {
     max-width: 50vw;
     max-height: 30vh;
@@ -11,6 +15,10 @@ body {
 
 .navbar {
     width: 100%;
+}
+
+.visit {
+    font-size: 2em;
 }
 
 .innerPro {
@@ -119,7 +127,7 @@ body {
     position: fixed;
     height: 100%;
     z-index: 100000;
-    background: rgb(15, 207, 159);
+    background: #f37736;
     width: 80vw;
     left: -80vw;
     transition: all 0.3s ease;
