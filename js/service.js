@@ -6,7 +6,8 @@ var gprojects;
 function createProjects() {
     var projects = [createProj(1, 'Mine Sweeper', 'Mine Sweeper', 'The best game EVER', 'https://idanelbaz.github.io/mine-sweeper', '16.5.19', 'ELBAZ inc', 'img/wallpapper.jpg'),
         createProj(2, 'Book Store', 'Book Store', 'very good book store managment tool', 'https://idanelbaz.github.io/book-store/', '27.5.19', 'ELBAZ inc', 'img/book-shop1.jpg'),
-        createProj(3, 'Guess Who', 'Guess Who', 'The user need to guess a person', 'https://idanelbaz.github.io/Guess-Who/', '26.5.19', 'ELBAZ inc', 'img/guess.png')
+        createProj(3, 'Guess Who', 'Guess Who', 'The user need to guess a person', 'https://idanelbaz.github.io/Guess-Who/', '26.5.19', 'ELBAZ inc', 'img/guess.png'),
+        createProj(4, 'Pixel-Perfect', 'Pixel-Perfect', 'Making a Pixel-Perfect-Responsive live page', ' https://idanelbaz.github.io/Pixel-Perfect/', '2.6.19', 'Elbaz inc', 'img/pixel.png')
     ];
 
 
