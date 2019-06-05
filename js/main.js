@@ -42,6 +42,9 @@ function renderProj() {
         } else if (i === 3) {
             $('.four').html(strHtml);
             strHtml = '';
+        } else if (i === 4) {
+            $('.five').html(strHtml);
+            strHtml = '';
         }
 
     };
