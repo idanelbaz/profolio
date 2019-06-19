@@ -48,7 +48,11 @@ function renderProj() {
         } else if (i === 5) {
             $('.six').html(strHtml);
             strHtml = '';
+        } else if (i === 6) {
+            $('.seven').html(strHtml);
+            strHtml = '';
         }
+
 
     };
 

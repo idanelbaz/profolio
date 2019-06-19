@@ -9,7 +9,8 @@ function createProjects() {
         createProj(3, 'Guess Who', 'Guess Who', 'The user need to guess a person', 'https://idanelbaz.github.io/Guess-Who/', '26.5.19', 'ELBAZ inc', 'img/guess.png'),
         createProj(4, 'Pixel-Perfect', 'Pixel-Perfect', 'Making a Pixel-Perfect-Responsive live page', ' https://idanelbaz.github.io/Pixel-Perfect/', '2.6.19', 'Elbaz inc', 'img/pixel.png'),
         createProj(5, 'Painter', 'painter', 'Paint as you like', 'https://idanelbaz.github.io/painter/', '5.6.19', 'Elbaz inc', 'img/painter.jpg'),
-        createProj(6, 'wikiTube', 'WikiTube', 'Search & Watch YouTube videos , and read about them on Wikipedia', 'https://idanelbaz.github.io/wikitube/', '13.6.19', 'Elbaz inc', 'img/wikitube.png')
+        createProj(6, 'wikiTube', 'WikiTube', 'Search & Watch YouTube videos , and read about them on Wikipedia', 'https://idanelbaz.github.io/wikitube/', '13.6.19', 'Elbaz inc', 'img/wikitube.png'),
+        createProj(7, 'Reader', 'Reader', 'My first VUE made project, Search your read books in Google-Books, and add them to your library', 'https://idanelbaz.github.io/miss-books/', '20.6.19', 'Elbaz inc', 'img/banner.png')
     ];
 
 
